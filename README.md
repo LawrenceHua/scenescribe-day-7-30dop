@@ -27,7 +27,7 @@ SceneScribe: link/text → topics → scripts → per-topic videos.
 ```mermaid
 flowchart TD
   U[User] --> UI[Next.js SceneScribe UI]
-  UI --> API[/api/scenescribe/projects + subroutes]
+  UI --> API[/api/scenescribe/projects/*]
   API --> LIB[lib/scenescribe (ingest, llm, store, video)]
   API --> LOG[lib/logger]
   LIB --> OAI[OpenAI API]
@@ -52,5 +52,5 @@ sequenceDiagram
   UI->>API: PATCH topics
   API->>OpenAI: Generate scripts (per topic)
   API->>Firestore: Persist project/topics/scripts/video status
-  UI-->>User: Scripts and status per topic; video gen triggers API when requested
+  UI-->>User: Scripts and status per topic
 ```
