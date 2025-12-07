@@ -1,0 +1,27 @@
+{
+  "name": "scenescribe-day-7-30dop",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "firebase": "^11.9.1",
+    "next": "14.1.0",
+    "openai": "^5.5.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "lucide-react": "^0.518.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "18.3.23",
+    "@types/react-dom": "^18.2.7",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "typescript": "^5"
+  }
+}
